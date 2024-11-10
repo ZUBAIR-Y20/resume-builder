@@ -1,0 +1,220 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and general layout */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FBC2EB, #A6C1EE);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Main container */
+  .container {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #d88390 0%,purple 100%);
+    color: white;
+  }
+  
+  /* Header Styles */
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Section Header */
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border-bottom: 2px solid #efff14;
+    padding-bottom: 5px;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Individual Form Sections */
+  .form-section {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #f1c4d5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Labels */
+  label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8e44ad;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Input Fields */
+  input, textarea {
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    border: 2px solid #f1c4d5;
+    border-radius: 6px;
+    margin-top: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #FF1493;
+    box-shadow: 0 0 8px rgba(255, 20, 147, 0.7);
+  }
+  
+  /* Add Experience and Education Buttons */
+  button {
+    padding: 12px 20px;
+    background-color: #FF1493;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #FF69B4;
+  }
+  
+  button:disabled {
+    background-color: #D3D3D3;
+    cursor: not-allowed;
+  }
+  
+  /* Experience and Education Section */
+  #experience-section, #education-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item label {
+    font-weight: normal;
+  }
+  
+  .item input, .item textarea {
+    border: 1px solid #ddd;
+    box-shadow: none;
+  }
+  
+  .item input:focus, .item textarea:focus {
+    border-color: #FF1493;
+  }
+  
+  /* Add Buttons for Experience and Education */
+  #add-experience, #add-education {
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  #add-experience:hover, #add-education:hover {
+    background-color: #ae8827;
+  }
+  
+  /* Resume Preview Section */
+  #resume-preview {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  #resume-preview h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #FF1493;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  #resume-content {
+    margin-top: 20px;
+  }
+  
+  #resume-content h3 {
+    font-size: 2rem;
+    color: #FF1493;
+    margin-bottom: 10px;
+  }
+  
+  #resume-content p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  #resume-content hr {
+    border: 1px solid #f1c4d5;
+    margin: 20px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .form-section {
+      padding: 15px;
+    }
+  
+    button {
+      padding: 10px 20px;
+    }
+  
+    #resume-preview {
+      padding: 15px;
+    }
+  }
+  
